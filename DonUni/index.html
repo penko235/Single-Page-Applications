@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SoftTerest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+
+  <div id="main"></div>
+
+  <!-- Libraries -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+  <!-- API -->
+  <script type="module" src="./scripts/app.js"></script>
+
+  <!-- From Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDe7f8-z8x6p-Kqj5Wnu7wQkLVQ7Vk31vU",
+      authDomain: "donuni-6c9c0.firebaseapp.com",
+      databaseURL: "https://donuni-6c9c0.firebaseio.com",
+      projectId: "donuni-6c9c0",
+      storageBucket: "donuni-6c9c0.appspot.com",
+      messagingSenderId: "393625005272",
+      appId: "1:393625005272:web:ecd21eab7eb21cdcfd3bad"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Trekking Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+
+  <div id="main"></div>
+
+  <!-- Libraries -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- From Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDJevtWW8Wq2Ho6GFDi3wz5AWDl3WaZvZ4",
+      authDomain: "trekking-zone-908d1.firebaseapp.com",
+      databaseURL: "https://trekking-zone-908d1.firebaseio.com",
+      projectId: "trekking-zone-908d1",
+      storageBucket: "trekking-zone-908d1.appspot.com",
+      messagingSenderId: "876556745975",
+      appId: "1:876556745975:web:db179268631151a677a7f2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+  <!-- API -->
+  <script type="module" src="./scripts/app.js"></script>
+
+</body>
+
+</html>

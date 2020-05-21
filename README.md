@@ -1,7 +1,3 @@
-# Single Page Application
-
-Dont' forget to run "npm install", because this app depending on bootstrap and jquery!
-
 # Web application (SPA) using:
 - JavaScript
 - HTML5

@@ -1,0 +1,32 @@
+{{>headers}}
+<div class="container home some">
+    <img class="det-img" src="./images/dinner.jpg" />
+    <div class="desc">
+      <h2 class="display-5">Dinner Recipe</h2>
+      <p class="infoType">Description:</p>
+      <p class="idea-description">{{terest.description}}</p>
+      <p class="infoType">Likes: <large>{{terest.likes}}</large>
+      </p>
+      <p class="infoType">Comments:</p>
+      <ul>
+        {{#each terest.comments}}
+        <li class="comment">{{this}}</li>
+        {{else}}
+        <li class="comment">No comments yet :(</li>
+        {{/each}}
+      </ul>
+    </div>
+    
+    {{#if isCreator}}
+    <div class="text-center">
+      <a class="btn detb" href="#/delete/{{terest.id}}">Delete</a>
+    </div>
+    {{else}}
+    <form class="text-center" method="POST" action="#/terest/details/{{terest.id}}">
+      <textarea class="textarea-det" name="newComment" id=""></textarea>
+      <button type="submit" class="btn detb" >Comment</button>
+      <a class="btn detb" href="#/likes/{{terest.id}}">Like</a>
+      {{/if}}
+    </form>
+  </div>
+  
